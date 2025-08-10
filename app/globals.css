@@ -65,7 +65,7 @@
   /* --- Updated primary and accent colors --- */
   --primary: #1c1c22;
   --accent: #00ff99;
-  --accent-hover: #00e187;
+  --accent-hover: #08cc7e;
   --primary-foreground: oklch(0.984 0.003 247.858);
   --secondary: oklch(0.968 0.007 247.896);
   --secondary-foreground: oklch(0.208 0.042 265.755);
@@ -101,7 +101,7 @@
   /* --- Using the same new colors for dark mode --- */
   --primary: #1c1c22;
   --accent: #00ff99;
-  --accent-hover: #00e187;
+  --accent-hover: #08cc7e;
   --primary-foreground: oklch(0.208 0.042 265.755);
   --secondary: oklch(0.279 0.041 260.031);
   --secondary-foreground: oklch(0.984 0.003 247.858);
@@ -140,5 +140,15 @@
 @layer utilities {
   .font-primary {
     font-family: var(--font-primary);
+  }
+}
+
+@layer components {
+  .container {
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+  }
+  .bg-accent:hover {
+    background-color: var(--accent-hover);
   }
 }
